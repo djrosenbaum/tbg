@@ -5,9 +5,38 @@ body {
 header { 
 	height: 100px;
 	}
+
 section {
 	background:#999;
 	min-height:600px;
 }
+
+.bracket {
+	border: 1px solid #000;
+}
+
+.bracket-wrapper {
+	border: 1px solid #000;
+	border-bottom: 2px solid #000;
+	display: block;
+	left: 50%;
+	padding: 4px;
+	position: absolute;
+	top: 400px;
+}
+
+.bracket-wrapper .entry-name p{
+	font-weight: bold;
+	text-align: center;
+}
+
+.add-bracket {
+	background: #666;
+	cursor: pointer;
+	top: -18px;
+	right: 0;
+	position: absolute;
+}
+
 footer {
 }
