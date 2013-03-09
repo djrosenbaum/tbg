@@ -11,8 +11,83 @@ section {
 	min-height:600px;
 }
 
+.round-1 {
+	background:#333;
+	min-height:600px;
+	width:300px;
+}
+
+.round-1 h1 {
+	color:#fff;
+	font-size:30px;
+	padding:10px;
+	margin-bottom: 50px;
+	text-align:center;
+	text-decoration:underline;
+}
+
+.round-1-bracket-outline {
+	border-top:1px solid #fff;
+	border-right:1px solid #fff;
+	border-bottom: 1px solid #fff;
+	display:block;
+	float:right;
+	height:80px;
+	position:relative;
+	width:250px;
+}
+
+.round-1-player-top {
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	position: absolute;
+	top:-33px;
+	width: 250px;
+}
+
+.round-1-player-top:hover {
+	background:#555;
+}
+
+.round-1-player-top p {
+	color: #fff;
+	font-size: 18px;
+	margin-left: 10px;
+	text-align:left;
+}
+
+.round-1-player-top input {
+	border:none;
+	display:none;
+	height:20px;
+	width:250px;
+}
+
+.round-1-player-bottom {
+	bottom:0px;
+	cursor:pointer;
+	padding-bottom:4px;
+	padding-top:10px;
+	position: absolute;
+	width:250px;
+}
+
+.round-1-player-bottom:hover {
+	background:#555;	
+}
+
+.round-1-player-bottom p {
+	color: #fff;
+	font-size: 18px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+
+
+
 .bracket {
-	border: 1px solid #000;
 }
 
 .bracket-wrapper {
