@@ -6,19 +6,25 @@ header {
 	height: 100px;
 	}
 
+header h1 {
+	color: #000;
+	font-size: 18px;
+	padding-top:30px;
+	text-align:center;
+}
+
 section {
-	background:#999;
+	background:#fff;
 	min-height:600px;
 }
 
 .round-1 {
-	background:#333;
 	min-height:600px;
 	width:300px;
 }
 
 .round-1 h1 {
-	color:#fff;
+	color:#000;
 	font-size:30px;
 	padding:10px;
 	margin-bottom: 50px;
@@ -27,9 +33,9 @@ section {
 }
 
 .round-1-bracket-outline {
-	border-top:1px solid #fff;
-	border-right:1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom: 1px solid #000;
 	display:block;
 	float:right;
 	height:80px;
@@ -38,31 +44,53 @@ section {
 }
 
 .round-1-player-top {
-	cursor: pointer;
-	padding-top: 10px;
-	padding-bottom: 4px;
 	position: absolute;
 	top:-33px;
 	width: 250px;
 }
 
-.round-1-player-top:hover {
-	background:#555;
+.round-1-player-top .player-name {
+	padding-top: 10px;
+	padding-bottom: 4px;
 }
 
-.round-1-player-top p {
-	color: #fff;
+.round-1-player-top .player-name p {
+	color: #000;
+	cursor: pointer;
+	display:inline-block;
 	font-size: 18px;
 	margin-left: 10px;
 	text-align:left;
 }
 
-.round-1-player-top input {
-	border:none;
-	display:none;
-	height:20px;
-	width:250px;
+.round-1-player-top .player-name p:hover {
+	color:#45bcd2;
 }
+
+.round-1-player-top .player-input input {
+	background:none;
+	border:none;
+	color:#45bcd2;
+	font-size:18px;
+	height:20px;
+	margin-top:8px;
+	width:230px;
+}
+
+.round-1-player-top .player-input .save-button {
+	color: #fff;
+	cursor:pointer;
+	float: left;
+	margin-top: 6px;
+	background: #45bcd2;
+	padding: 4px;
+	font-size: 20px;
+}
+
+.round-1-player-top .player-input .save-button:hover {
+	background: #45bcd2;
+}
+
 
 .round-1-player-bottom {
 	bottom:0px;
@@ -78,7 +106,7 @@ section {
 }
 
 .round-1-player-bottom p {
-	color: #fff;
+	color: #000;
 	font-size: 18px;
 	margin-left: 10px;
 	text-align: left;
@@ -114,4 +142,12 @@ section {
 }
 
 footer {
+}
+
+.hidden {
+	display:none;
+}
+
+.hover {
+	cursor:pointer;
 }

@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>tournament generator</title>
+        <title>tournament bracket generator</title>
         <link type="text/css" rel="stylesheet" href="css/reset.css" />       
         <link type="text/css" rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <header>header</header>
+        <header>
+            <h1>
+                Tournament Bracket Generator
+            </h1>
+        </header>
         <section>
             <div id="round_1" class="round-1">
                 <h1>Round 1</h1>
                 <div class="round-1-bracket">
                     <div class="round-1-bracket-outline">
                         <div class="round-1-player-top">
-                            <p>top player</p>
-                            <input type="text" value="top player input">
+                            <div class="player-name">
+                                <p>top player</p>
+                            </div>
+                            <div class="player-input hidden">
+                                <input type="text" value="top player input">
+                                <span class="save-button">save</span>
+                            </div>
                         </div>
                         <div class="round-1-player-bottom">
                             <p>bottom player</p>
