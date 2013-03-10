@@ -10,7 +10,8 @@ $(document).ready(function() {
 		$(this).parent('.player-name').siblings(".player-input").children("input").attr('value', player_name);
 		//console.log(player_name);
 		$(this).parent('.player-name').addClass('hidden');
-		$(this).parent('.player-name').siblings(".player-input").removeClass('hidden');		
+		$(this).parent('.player-name').siblings(".player-input").removeClass('hidden');
+		$(this).parent('.player-name').siblings(".player-input").children("input").select();
 	}
 
 	function save_player_name() {
