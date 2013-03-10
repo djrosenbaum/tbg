@@ -24,12 +24,9 @@ section {
 }
 
 .round-1 h1 {
-	color:#000;
-	font-size:30px;
 	padding:10px;
 	margin-bottom: 50px;
 	text-align:center;
-	text-decoration:underline;
 }
 
 .round-1-bracket-outline {
@@ -43,102 +40,78 @@ section {
 	width:250px;
 }
 
-.round-1-player-top {
+.player-top {
 	position: absolute;
 	top:-33px;
 	width: 250px;
 }
 
-.round-1-player-top .player-name {
-	padding-top: 10px;
-	padding-bottom: 4px;
-}
-
-.round-1-player-top .player-name p {
-	color: #000;
-	cursor: pointer;
-	display:inline-block;
-	font-size: 18px;
-	margin-left: 10px;
-	text-align:left;
-}
-
-.round-1-player-top .player-name p:hover {
-	color:#45bcd2;
-}
-
-.round-1-player-top .player-input input {
-	background:none;
-	border:none;
-	color:#45bcd2;
-	font-size:18px;
-	height:20px;
-	margin-top:8px;
-	width:230px;
-}
-
-.round-1-player-top .player-input .save-button {
-	color: #fff;
-	cursor:pointer;
-	float: left;
-	margin-top: 6px;
-	background: #45bcd2;
-	padding: 4px;
-	font-size: 20px;
-}
-
-.round-1-player-top .player-input .save-button:hover {
-	background: #45bcd2;
-}
-
-
-.round-1-player-bottom {
+.player-bottom {
 	bottom:0px;
-	cursor:pointer;
-	padding-bottom:4px;
-	padding-top:10px;
 	position: absolute;
 	width:250px;
 }
 
-.round-1-player-bottom:hover {
-	background:#555;	
-}
-
-.round-1-player-bottom p {
-	color: #000;
+.player-top .player-name p {
+	cursor: pointer;
+	display:inline-block;
 	font-size: 18px;
+	margin-top: 10px;
 	margin-left: 10px;
-	text-align: left;
 }
 
-
-
-
-.bracket {
+.player-bottom .player-name p {
+	cursor: pointer;
+	display:inline-block;
+	font-size: 18px;
+	margin-bottom: 4px;
+	margin-left: 10px;
 }
 
-.bracket-wrapper {
-	border: 1px solid #000;
-	border-bottom: 2px solid #000;
-	display: block;
-	left: 50%;
+.player-name p:hover {
+	color:#45bcd2;
+}
+
+.player-top .player-input input {
+	color:#45bcd2;
+	height:20px;
+	margin-top:8px;
+	margin-left: 10px;
+	width:230px;
+}
+
+.player-bottom .player-input input {
+	color:#45bcd2;
+	height:20px;
+	margin-bottom:2px;
+	margin-left: 10px;
+	width:230px;	
+}
+
+.player-top .save-button {
+	background: #45bcd2;
+	color: #fff;
+	cursor:pointer;
+	font-size: 20px;
+	left: 0px;
 	padding: 4px;
 	position: absolute;
-	top: 400px;
+	top: 36px;
 }
 
-.bracket-wrapper .entry-name p{
-	font-weight: bold;
-	text-align: center;
-}
-
-.add-bracket {
-	background: #666;
-	cursor: pointer;
-	top: -18px;
-	right: 0;
+.player-bottom .save-button {
+	background: #45bcd2;
+	color: #fff;
+	cursor:pointer;
+	font-size: 20px;
+	left: 0px;
+	padding: 4px;
 	position: absolute;
+	top: 28px;
+}
+
+.player-input .save-button:hover {
+	background: #ccc;
 }
 
 footer {

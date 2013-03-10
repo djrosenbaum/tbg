@@ -1,0 +1,19 @@
+* {
+	font-family: verdana, arial, sans-serif;
+}
+
+p {
+	color: #000;
+	font-size: 18px;	
+}
+
+h1 {
+	color:#000;
+	font-size:30px;	
+}
+
+input {
+	background:none;
+	border:none;
+	font-size:18px;
+}
