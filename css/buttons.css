@@ -1,0 +1,19 @@
+button {
+	border:none;
+}
+
+.button {
+	border-radius: 4px;
+	color:#fff;
+	cursor:pointer;
+	font-size:14px;
+	padding: 6px;
+}
+
+.red {
+	background:#ff6666;	
+}
+
+.red:hover {
+	background:#cc3333;	
+}

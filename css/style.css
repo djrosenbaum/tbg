@@ -7,18 +7,34 @@ header {
 	}
 
 header h1 {
-	color: #000;
+	color: #fff;
 	font-size: 18px;
 	padding-top:30px;
 	text-align:center;
 }
 
-section {
+.sidebar {
+	float:left;
+}
+
+.sidebar .round-1-options ul {
+	float:left;
+	padding:10px;
+	width: 200px;
+}
+
+.sidebar .round-1-options li p {
+	text-align:center;
+}
+
+.page-wrap {
 	background:#fff;
 	min-height:600px;
 }
 
 .round-1 {
+	border-left:1px solid #ccc;
+	float:left;
 	min-height:600px;
 	width:300px;
 }
@@ -27,6 +43,18 @@ section {
 	padding:10px;
 	margin-bottom: 50px;
 	text-align:center;
+}
+
+.round-1 .bracket-options {
+	border:1px solid #000;
+	height: 40px;
+	margin-bottom: 50px;
+}
+
+.round-1-bracket {
+	display: inline-block;
+	margin-bottom: 80px;
+	margin-left: 40px;
 }
 
 .round-1-bracket-outline {
@@ -96,18 +124,18 @@ section {
 	left: 0px;
 	padding: 4px;
 	position: absolute;
-	top: 36px;
+	top: 34px;
 }
 
 .player-bottom .save-button {
 	background: #45bcd2;
 	color: #fff;
 	cursor:pointer;
-	font-size: 20px;
+	font-size: 16px;
 	left: 0px;
 	padding: 4px;
 	position: absolute;
-	top: 28px;
+	top: 26px;
 }
 
 .player-input .save-button:hover {
@@ -115,6 +143,11 @@ section {
 }
 
 footer {
+}
+
+
+.clear {
+	clear:both;
 }
 
 .hidden {

@@ -4,7 +4,8 @@
         <title>tournament bracket generator</title>
         <link type="text/css" rel="stylesheet" href="css/reset.css" />       
         <link type="text/css" rel="stylesheet" href="css/style.css" />
-        <link type="text/css" rel="stylesheet" href="css/text.css" />        
+        <link type="text/css" rel="stylesheet" href="css/text.css" /> 
+        <link type="text/css" rel="stylesheet" href="css/buttons.css" />
     </head>
     <body>
         <header>
@@ -12,32 +13,46 @@
                 Tournament Bracket Generator
             </h1>
         </header>
-        <section>
+        <div class="page-wrap">
+            <!-- begin sidebar -->
+            <div id="sidebar" class="sidebar">
+                <div class="round-1-options">
+                <ul>
+                    <li><p class="add-bracket button red">add new bracket</p></li>
+                </ul>
+                <div class="clear"></div>
+                </div>
+            </div>
+            <!-- begin round 1 -->
             <div id="round_1" class="round-1">
                 <h1>Round 1</h1>
                 <div class="round-1-bracket">
                     <div class="round-1-bracket-outline">
                         <div class="player-top">
                             <div class="player-name">
-                                <p>player 1</p>
+                                <p>player name</p>
                             </div>
                             <div class="player-input hidden">
-                                <input type="text" value="player 1">
-                                <span class="save-button hover">save</span>
+                                <input type="text" value="player name">
+                                <button class="save-button hover">save</button>
                             </div>
                         </div>
                         <div class="player-bottom">
                             <div class="player-name">
-                                <p>player 2</p>
+                                <p>player name</p>
                             </div>
                             <div class="player-input hidden">
-                                <input type="text" value="player 2">
-                                <span class="save-button hover">save</span>
+                                <input type="text" value="player name">
+                                <button class="save-button hover">save</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="clear"></div>
+            <!-- end round 1 -->
+
+
 <!--        <div class="bracket">
     	        <div class="bracket-wrapper">
     	        	<div class="entry-name">
@@ -49,9 +64,11 @@
     	        </div>
 	        </div>
 -->
-        </section>
+        </div>
         <footer>footer</footer>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="js/actions.js"></script>
+		<script src="js/functions.js"></script>
+        <script src="js/actions.js"></script>
+
     </body>
 </html>
