@@ -28,14 +28,14 @@ function edit_player_name($this) {
 	function add_round1_bracket() {
 		console.log('adding bracket to round 1');
 		console.log(round_1_bracket_html);
-		$('.round-1-bracket').last().after(round_1_bracket_html);
+		$('.round-1 .bracket').last().next('.clear').after(round_1_bracket_html);
 	}
 
 /* html blocks */
 
 	var round_1_bracket_html = 
-	    '<div class="round-1-bracket">' +
-	        '<div class="round-1-bracket-outline">' +
+	    '<div class="bracket">' +
+	        '<div class="bracket-outline">' +
 	            '<div class="player-top">' +
 	                '<div class="player-name">' +
 	                    '<p>player name</p>' +
@@ -55,4 +55,5 @@ function edit_player_name($this) {
 	                '</div>' +
 	            '</div>' +
 	        '</div>' +
-	    '</div>';
+	    '</div>' +
+	    '<div class="clear"></div>';

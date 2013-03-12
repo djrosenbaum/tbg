@@ -32,11 +32,11 @@ header h1 {
 	min-height:600px;
 }
 
+/* begin round 1 styling */
 .round-1 {
 	border-left:1px solid #ccc;
 	float:left;
 	min-height:600px;
-	width:300px;
 }
 
 .round-1 h1 {
@@ -45,19 +45,13 @@ header h1 {
 	text-align:center;
 }
 
-.round-1 .bracket-options {
-	border:1px solid #000;
-	height: 40px;
-	margin-bottom: 50px;
-}
-
-.round-1-bracket {
+.round-1 .bracket {
 	display: inline-block;
 	margin-bottom: 80px;
-	margin-left: 40px;
+	margin-left: 48px;
 }
 
-.round-1-bracket-outline {
+.round-1 .bracket-outline {
 	border-top:1px solid #000;
 	border-right:1px solid #000;
 	border-bottom: 1px solid #000;
@@ -68,19 +62,19 @@ header h1 {
 	width:250px;
 }
 
-.player-top {
+.round-1 .player-top {
 	position: absolute;
 	top:-33px;
 	width: 250px;
 }
 
-.player-bottom {
+.round-1 .player-bottom {
 	bottom:0px;
 	position: absolute;
 	width:250px;
 }
 
-.player-top .player-name p {
+.round-1 .player-top .player-name p {
 	cursor: pointer;
 	display:inline-block;
 	font-size: 18px;
@@ -88,7 +82,7 @@ header h1 {
 	margin-left: 10px;
 }
 
-.player-bottom .player-name p {
+.round-1 .player-bottom .player-name p {
 	cursor: pointer;
 	display:inline-block;
 	font-size: 18px;
@@ -96,11 +90,11 @@ header h1 {
 	margin-left: 10px;
 }
 
-.player-name p:hover {
+.round-1 .player-name p:hover {
 	color:#45bcd2;
 }
 
-.player-top .player-input input {
+.round-1 .player-top .player-input input {
 	color:#45bcd2;
 	height:20px;
 	margin-top:8px;
@@ -108,7 +102,7 @@ header h1 {
 	width:230px;
 }
 
-.player-bottom .player-input input {
+.round-1 .player-bottom .player-input input {
 	color:#45bcd2;
 	height:20px;
 	margin-bottom:2px;
@@ -116,7 +110,7 @@ header h1 {
 	width:230px;	
 }
 
-.player-top .save-button {
+.round-1 .player-top .save-button {
 	background: #45bcd2;
 	color: #fff;
 	cursor:pointer;
@@ -127,7 +121,7 @@ header h1 {
 	top: 34px;
 }
 
-.player-bottom .save-button {
+.round-1 .player-bottom .save-button {
 	background: #45bcd2;
 	color: #fff;
 	cursor:pointer;
@@ -138,11 +132,52 @@ header h1 {
 	top: 26px;
 }
 
-.player-input .save-button:hover {
+.round-1 .player-input .save-button:hover {
 	background: #ccc;
 }
 
+/* end round 1 styling */
+
+/* begin round 2 styling */
+
+.round-2 {
+	float:left;
+	min-height:600px;
+}
+
+.round-2 h1 {
+	padding:10px;
+	margin-bottom: 50px;
+	text-align:center;
+}
+
+.round-2 .bracket {
+	display: inline-block;
+	margin-bottom: 80px;
+}
+
+.round-2 .bracket-outline {
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom: 1px solid #000;
+	display:block;
+	float:left;
+	height:165px;
+	margin-top: 40px;
+	position:relative;
+	width:250px;
+}
+
+/* end round 2 styling */
+
+
 footer {
+}
+
+footer p {
+	color:#fff;
+	margin-top:10px;
+	text-align:center;
 }
 
 

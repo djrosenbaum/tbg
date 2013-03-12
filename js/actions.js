@@ -19,7 +19,7 @@ $(document).ready(function() {
     	}
 	});
 
-	$(document).on('click','.add-bracket', function() {
+	$(document).on('click','.round-1-options .add-bracket', function() {
 		add_round1_bracket();
 	});
 

@@ -22,12 +22,19 @@
                 </ul>
                 <div class="clear"></div>
                 </div>
+                <div class="round-2-options hidden">
+                <ul>
+                    <li><p class="add-bracket button red">add new bracket</p></li>
+                </ul>
+                <div class="clear"></div>
+                </div>                
             </div>
             <!-- begin round 1 -->
             <div id="round_1" class="round-1">
                 <h1>Round 1</h1>
-                <div class="round-1-bracket">
-                    <div class="round-1-bracket-outline">
+                <!-- new bracket -->
+                <div class="bracket">
+                    <div class="bracket-outline">
                         <div class="player-top">
                             <div class="player-name">
                                 <p>player name</p>
@@ -48,9 +55,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="clear"></div>
+                <!-- end bracket -->
+                <!-- new bracket -->
+                <div class="bracket">
+                    <div class="bracket-outline">
+                        <div class="player-top">
+                            <div class="player-name">
+                                <p>player name</p>
+                            </div>
+                            <div class="player-input hidden">
+                                <input type="text" value="player name">
+                                <button class="save-button hover">save</button>
+                            </div>
+                        </div>
+                        <div class="player-bottom">
+                            <div class="player-name">
+                                <p>player name</p>
+                            </div>
+                            <div class="player-input hidden">
+                                <input type="text" value="player name">
+                                <button class="save-button hover">save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <!-- end bracket -->
+            </div>
+            <!-- end round 1 -->
+            <div class="round-2">
+                <h1>Round 2</h1>
+                <div class="bracket">
+                    <div class="bracket-outline">
+                    </div>
+                </div>
             </div>
             <div class="clear"></div>
-            <!-- end round 1 -->
 
 
 <!--        <div class="bracket">
@@ -65,7 +106,7 @@
 	        </div>
 -->
         </div>
-        <footer>footer</footer>
+        <footer><p>footer</p></footer>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="js/functions.js"></script>
         <script src="js/actions.js"></script>
