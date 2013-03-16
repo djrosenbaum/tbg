@@ -27,8 +27,13 @@ function edit_player_name($this) {
 /* add bracket to round 1 */
 	function add_round1_bracket() {
 		console.log('adding bracket to round 1');
-		console.log(round_1_bracket_html);
+		//console.log(round_1_bracket_html);
 		$('.round-1 .bracket').last().next('.clear').after(round_1_bracket_html);
+		round1_bracket_length = round1_bracket_length + 1;
+		if (round1_bracket_length % 2 == 0) {
+			console.log("adding bracket to round 2");
+			$('.round-2 .bracket').last().next('.clear').after(round_2_bracket_html);
+		} 
 	}
 
 /* html blocks */
@@ -57,3 +62,18 @@ function edit_player_name($this) {
 	        '</div>' +
 	    '</div>' +
 	    '<div class="clear"></div>';
+
+	var round_2_bracket_html = 
+		'<div class="bracket">' +
+            '<div class="bracket-outline">' +
+            '</div>' +
+        '</div>' +
+        '<div class="clear"></div>';
+
+/* end html blocks */
+
+/* begin public variables */
+
+var round1_bracket_length = $('#round_1 .bracket').length;
+
+/* end public variables */

@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	//begin ready
 	console.log('hello tournament');
+	console.log(round1_bracket_length);
 
 	/* event listeners */
 
@@ -21,6 +22,7 @@ $(document).ready(function() {
 
 	$(document).on('click','.round-1-options .add-bracket', function() {
 		add_round1_bracket();
+		console.log(round1_bracket_length);
 	});
 
 	/* end event listeners */
