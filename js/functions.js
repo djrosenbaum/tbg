@@ -77,3 +77,19 @@ function edit_player_name($this) {
 var round1_bracket_length = $('#round_1 .bracket').length;
 
 /* end public variables */
+
+//begin objects
+
+function bracket (round, topName, bottomName) {
+	this.round = round;
+	this.topName = topName;
+	this.bottomName = bottomName;
+}
+
+var bracket01 = new bracket("round1","dave","nate");
+
+console.log(bracket01.round);
+console.log(bracket01.topName);
+console.log(bracket01.bottomName);
+
+//end objects

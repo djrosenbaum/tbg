@@ -5,6 +5,35 @@ $(document).ready(function() {
 
 	/* event listeners */
 
+/*	$(document).on('click', function(event) {
+		var $target = $(event.target);
+		if ( $target.is("button") ) {
+			console.log('you clicked a button');
+		}
+		var target_class = $target.attr('class');
+		//console.log('class name: ', target_class);	
+		if ( $target.hasClass('red') ) {
+			console.log('you clicked a red class');
+		}
+		else if ( $target.hasClass('page-wrap') ) {
+			console.log('you clicked the page wrapper');
+		}		
+	});
+*/
+
+	
+	$(document).on('click','.bracket-outline', function() {
+		console.log('clicked a bracket outline');
+		var topPlayer = $(this).children('.player-top').children('.player-name').children('p').text();
+		var bottomPlayer = $(this).children('.player-bottom').children('.player-name').children('p').text();
+		//console.log(topPlayer);
+		//console.log(bottomPlayer);
+		var thisBracket = new bracket('round_1',topPlayer,bottomPlayer);
+		console.log(thisBracket.round);
+		console.log(thisBracket.topName);
+		console.log(thisBracket.bottomName);
+	});
+
 	$(document).on('click','.player-name p', function() {
 		edit_player_name($(this));
 	});
