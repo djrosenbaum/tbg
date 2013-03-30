@@ -3,6 +3,9 @@ $(document).ready(function() {
 	console.log('hello tournament');
 	console.log(round1_bracket_length);
 
+	var player_index = $(".player-name").index();
+	console.log(player_index);
+
 	/* event listeners */
 
 /*	$(document).on('click', function(event) {
@@ -20,7 +23,6 @@ $(document).ready(function() {
 		}		
 	});
 */
-
 	
 	$(document).on('click','.bracket-outline', function() {
 		console.log('clicked a bracket outline');

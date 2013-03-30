@@ -1,4 +1,24 @@
-/* functions */
+// objects
+
+//player object
+function Player(name) {
+	this._name = name;
+}
+
+Player.prototype.getName = function() {
+	return this._name;
+}
+
+Player.prototype.setName = function(newName) {
+	this._name = newName;
+}
+
+//player array container
+var players = [];
+//var p1 = new Player('dave');
+//players.push(p1);
+
+// functions
 
 /* edit a player's name */
 function edit_player_name($this) {
@@ -9,6 +29,14 @@ function edit_player_name($this) {
 		$this.parent('.player-name').addClass('hidden');
 		$this.parent('.player-name').siblings(".player-input").removeClass('hidden');
 		$this.parent('.player-name').siblings(".player-input").children("input").select();
+
+		//player number in the list
+	  	var player_index = $(".player-name p").index($this);
+	  	//console.log("That was player #", player_index);
+
+	  	var newPlayer = new Player(player_index+player_name);
+	  	console.log("my new player is " + newPlayer.getName());
+	  	players.push(newPlayer);
 	}
 
 /* save a player's name */
@@ -21,19 +49,26 @@ function edit_player_name($this) {
 		//console.log(new_player_name);
 		$this.parent().siblings('.player-name').children('p').text(player_name);
 		$this.parent('.player-input').addClass('hidden');
-		$this.parent().siblings('.player-name').removeClass('hidden');		
+		$this.parent().siblings('.player-name').removeClass('hidden');
 	}
 
 /* add bracket to round 1 */
 	function add_round1_bracket() {
 		console.log('adding bracket to round 1');
+		
+		//count number of players in round 1
+		var numPlayers = $('.player-name').length;
+		console.log(numPlayers, "players in round 1");
+
 		//console.log(round_1_bracket_html);
 		$('.round-1 .bracket').last().next('.clear').after(round_1_bracket_html);
 		round1_bracket_length = round1_bracket_length + 1;
 		if (round1_bracket_length % 2 == 0) {
 			console.log("adding bracket to round 2");
 			$('.round-2 .bracket').last().next('.clear').after(round_2_bracket_html);
-		} 
+		}
+		var numPlayers = $('.player-name').length;
+		console.log(numPlayers, "players in round 1");
 	}
 
 /* html blocks */
@@ -86,10 +121,19 @@ function bracket (round, topName, bottomName) {
 	this.bottomName = bottomName;
 }
 
+/*
 var bracket01 = new bracket("round1","dave","nate");
 
 console.log(bracket01.round);
 console.log(bracket01.topName);
 console.log(bracket01.bottomName);
+*/
+
+//returning html
+/*
+Player.prototype.getNameHTML = function() {
+	return'<p>'+this._name+'</p>';
+}
+*/
 
 //end objects
