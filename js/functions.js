@@ -38,10 +38,15 @@ function generateBracket() {
 		console.log('building bracket ' + i);
 		$('.round-1').append(round_1_bracket_html);
 	}
-
-	$.each(players, function(playerNumber, playerName) {
+	/*$.each(players, function(playerNumber, playerName) {
       console.log(playerNumber + ': ' + playerName);
-   });
+   	});*/
+     console.log('populating the brackets with players');
+	$('.player-name p').each(function(i) {
+     	$(this).text(players[i]);
+     	var playerName = $(this).text();
+     	console.log('adding player: ' + playerName);
+   	});
 }
 
 /* edit a player's name */
