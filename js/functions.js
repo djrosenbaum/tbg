@@ -14,11 +14,35 @@ Player.prototype.setName = function(newName) {
 }
 
 //player array container
-var players = [];
+var players = ['player 1', 'player 2', 'player 3', 'player 4'];
 //var p1 = new Player('dave');
 //players.push(p1);
 
 // functions
+
+//generate the initial bracket on page load
+
+function generateBracket() {
+	console.log('generating the initial bracket');
+	//var allPlayers = players.valueOf();
+	//console.log(allPlayers);
+
+	//count the number of players in the array
+	var number_of_players = players.length;
+	console.log('there are ' + number_of_players + ' players')
+
+	//create the number of brackets needed based on the number of players
+	var totalBrackets = (number_of_players/2);
+	console.log('building ' + totalBrackets + ' brackets');
+	for (var i = 0; i < totalBrackets; i++) {
+		console.log('building bracket ' + i);
+		$('.round-1').append(round_1_bracket_html);
+	}
+
+	$.each(players, function(playerNumber, playerName) {
+      console.log(playerNumber + ': ' + playerName);
+   });
+}
 
 /* edit a player's name */
 function edit_player_name($this) {
@@ -67,6 +91,8 @@ function edit_player_name($this) {
 			console.log("adding bracket to round 2");
 			$('.round-2 .bracket').last().next('.clear').after(round_2_bracket_html);
 		}
+
+		// refresh numPlayers variable to verify the variable updated
 		var numPlayers = $('.player-name').length;
 		console.log(numPlayers, "players in round 1");
 	}

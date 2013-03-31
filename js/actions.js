@@ -1,10 +1,11 @@
 $(document).ready(function() {
 	//begin ready
-	console.log('hello tournament');
-	console.log(round1_bracket_length);
+	//console.log('hello tournament');
+	//console.log(round1_bracket_length);
 
-	var player_index = $(".player-name").index();
-	console.log(player_index);
+	generateBracket();
+
+	//console.log(player_index);
 
 	/* event listeners */
 
