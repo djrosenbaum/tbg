@@ -23,6 +23,10 @@ header h1 {
 	width: 200px;
 }
 
+.sidebar .round-1-options li {
+	margin-bottom: 6px;
+}
+
 .sidebar .round-1-options li p {
 	text-align:center;
 }
@@ -170,13 +174,45 @@ header h1 {
 
 /* end round 2 styling */
 
+/* begin output */
+
+.output {
+	border-top:1px solid #ccc;
+	padding-top:10px;
+	padding-right: 10px;
+	padding-left: 250px;
+	padding-bottom: 40px;
+}
+
+.output-panel {
+	border-right: 1px solid #ccc;
+	float:left;
+	padding-right: 10px;
+	width: 600px;
+}
+
+.output-panel h2 {
+	margin-bottom: 10px;
+}
+
+.output-panel p {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.variable-output {
+	float:left;
+	padding-left: 20px;
+}
 
 footer {
 }
 
 footer p {
 	color:#fff;
-	margin-top:10px;
+	font-size: 14px;
+	font-weight: normal;
+	margin-top:50px;
 	text-align:center;
 }
 

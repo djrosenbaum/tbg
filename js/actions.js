@@ -3,6 +3,8 @@ $(document).ready(function() {
 	//console.log('hello tournament');
 	//console.log(round1_bracket_length);
 
+	output_panel('welcome to the tournament bracket generator');
+
 	generateBracket();
 
 	//console.log(player_index);
@@ -26,15 +28,15 @@ $(document).ready(function() {
 */
 	
 	$(document).on('click','.bracket-outline', function() {
-		console.log('clicked a bracket outline');
+		//console.log('clicked a bracket outline');
 		var topPlayer = $(this).children('.player-top').children('.player-name').children('p').text();
 		var bottomPlayer = $(this).children('.player-bottom').children('.player-name').children('p').text();
 		//console.log(topPlayer);
 		//console.log(bottomPlayer);
-		var thisBracket = new bracket('round_1',topPlayer,bottomPlayer);
-		console.log(thisBracket.round);
-		console.log(thisBracket.topName);
-		console.log(thisBracket.bottomName);
+		//var thisBracket = new bracket('round_1',topPlayer,bottomPlayer);
+		//console.log(thisBracket.round);
+		//console.log(thisBracket.topName);
+		//console.log(thisBracket.bottomName);
 	});
 
 	$(document).on('click','.player-name p', function() {
@@ -54,7 +56,7 @@ $(document).ready(function() {
 
 	$(document).on('click','.round-1-options .add-bracket', function() {
 		add_round1_bracket();
-		console.log(round1_bracket_length);
+		//console.log(round1_bracket_length);
 	});
 
 	/* end event listeners */
